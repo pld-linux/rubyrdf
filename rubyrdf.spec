@@ -13,7 +13,7 @@ URL:		http://www.w3.org/2001/12/rubyrdf/
 BuildRequires:	ruby
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-BuildArch: noarch
+#BuildArch: noarch
 
 %description
 RubyRDF is a library that provides some basic support for working with
