@@ -4,7 +4,7 @@ Summary:	RDF module for Ruby
 Summary(pl):	Modu³ RDF dla Ruby
 Name:		rubyrdf
 Version:	0
-Release:	0.20030621.1
+Release:	0.20030621.2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.w3.org/2001/12/rubyrdf/%{name}-plus.tar.gz
@@ -41,6 +41,7 @@ ruby install.rb install
 
 
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}/
+cp -a tests/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}/tests/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
