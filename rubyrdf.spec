@@ -1,5 +1,3 @@
-%define	ruby_archdir		%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_rubylibdir		%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	RDF module for Ruby
 Summary(pl):	Modu³ RDF dla jêzyka Ruby
 Name:		rubyrdf
@@ -10,10 +8,11 @@ Group:		Development/Languages
 Source0:	http://www.w3.org/2001/12/rubyrdf/%{name}-plus.tar.gz
 # Source0-md5:	42c62be30afa530fde71223e06d8cf24
 URL:		http://www.w3.org/2001/12/rubyrdf/
+BuildRequires:	rpmbuild(macros) >= 1.272
 BuildRequires:	ruby
 Requires:	ruby
+#BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-#BuildArch: noarch
 
 %description
 RubyRDF is a library that provides some basic support for working with
@@ -26,8 +25,7 @@ formatem danych RDF z W3C.
 
 %prep
 %setup -q -n pack
-
-rm -rf examples/{examples,squish/README-tests.txt~,tests} lib/.#*
+rm -rf examples/{examples,squish/README-tests.txt~,tests} 'lib/.#'*
 
 %build
 ruby install.rb config \
