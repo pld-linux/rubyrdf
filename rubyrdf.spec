@@ -8,10 +8,11 @@ Group:		Development/Languages
 Source0:	http://www.w3.org/2001/12/rubyrdf/%{name}-plus.tar.gz
 # Source0-md5:	42c62be30afa530fde71223e06d8cf24
 URL:		http://www.w3.org/2001/12/rubyrdf/
-BuildRequires:	rpmbuild(macros) >= 1.272
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby
 Requires:	ruby
 #BuildArch:	noarch
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
