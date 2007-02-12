@@ -1,5 +1,5 @@
 Summary:	RDF module for Ruby
-Summary(pl):	Modu³ RDF dla jêzyka Ruby
+Summary(pl.UTF-8):   ModuÅ‚ RDF dla jÄ™zyka Ruby
 Name:		rubyrdf
 Version:	0
 Release:	0.20030621.2
@@ -20,8 +20,8 @@ RubyRDF is a library that provides some basic support for working with
 W3C's RDF data format.
 
 
-%description -l pl
-RubyRDF to biblioteka dostarczaj±ca podstawowe wsparcie do pracy z
+%description -l pl.UTF-8
+RubyRDF to biblioteka dostarczajÄ…ca podstawowe wsparcie do pracy z
 formatem danych RDF z W3C.
 
 %prep
