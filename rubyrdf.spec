@@ -1,5 +1,5 @@
 Summary:	RDF module for Ruby
-Summary(pl.UTF-8):   Moduł RDF dla języka Ruby
+Summary(pl.UTF-8):	Moduł RDF dla języka Ruby
 Name:		rubyrdf
 Version:	0
 Release:	0.20030621.2
